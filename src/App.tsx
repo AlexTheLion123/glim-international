@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { 
   ChevronDown, 
   MapPin, 
-  Clock, 
   Phone, 
   Mail, 
   Calendar,
@@ -62,63 +61,63 @@ function App() {
 
   const ministries = [
     {
+      icon: <Music className="w-8 h-8" />,
+      title: "Interdenominational Worship",
+      description: "We provide a warm, welcoming environment where individuals can connect and grow in faith across denominations."
+    },
+    {
       icon: <Heart className="w-8 h-8" />,
-      title: "Community Outreach",
-      description: "Serving our local community through food drives, homeless support, and volunteer programs."
+      title: "Healing & Deliverance",
+      description: "Committed to holistic spiritual care, providing healing and deliverance ministries for total well-being."
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Youth Ministry",
-      description: "Engaging young people through fun activities, mentorship, and spiritual growth programs."
+      title: "Community Outreach",
+      description: "Spreading Christ's light through community programs and outreach across communities and around the world."
     },
     {
       icon: <Book className="w-8 h-8" />,
-      title: "Bible Study",
-      description: "Weekly small group sessions exploring God's word and building deeper relationships."
-    },
-    {
-      icon: <Music className="w-8 h-8" />,
-      title: "Worship Ministry",
-      description: "Leading the congregation in praise through contemporary and traditional worship music."
+      title: "Educational & Counseling",
+      description: "Equipping believers with biblical truth and providing spiritual counseling for purposeful, impactful living."
     }
   ];
 
   const upcomingEvents = [
     {
-      date: "March 15",
-      title: "Community Easter Egg Hunt",
-      time: "2:00 PM - 4:00 PM",
-      description: "Family-friendly event with games, prizes, and refreshments for all ages."
+      date: "Every Sunday",
+      title: "🙌 Sunday Worship Service",
+      time: "13:00 (GMT+2)",
+      description: "Join us every Sunday at Ubuntu Centre, 3 Wherry Road, Muizenberg, Cape Town for vibrant worship and spiritual growth."
     },
     {
-      date: "March 22",
-      title: "Youth Retreat Weekend",
-      time: "Friday - Sunday",
-      description: "A weekend of fellowship, worship, and spiritual growth for teens and young adults."
+      date: "Every Tuesday",
+      title: "📖 Discipleship Classes",
+      time: "20:00 (GMT+2)",
+      description: "Grow in the Word through our discipleship classes. Connect with us live on Zoom for biblical teaching and fellowship."
     },
     {
-      date: "March 29",
-      title: "Special Guest Speaker",
-      time: "10:30 AM Service",
-      description: "Join us for an inspiring message from renowned author and speaker Dr. Sarah Johnson."
+      date: "Monthly",
+      title: "🙏 7 Days Fasting & Prayer",
+      time: "21:00–22:00 (GMT+2)",
+      description: "Join us every month for 7 days of fasting and prayer. Live on Zoom for spiritual renewal and intercession."
     }
   ];
 
   const testimonials = [
     {
-      name: "Sarah Mitchell",
-      text: "This church has become my spiritual home. The community is so welcoming and supportive.",
-      role: "Member since 2019"
+      name: "Community Member",
+      text: "GLIM International has been a beacon of hope in my life. The interdenominational approach makes everyone feel welcome and valued.",
+      role: "Active Member"
     },
     {
-      name: "David Thompson",
-      text: "The youth programs here helped shape my faith journey. I'm grateful for the mentorship I received.",
-      role: "Former Youth Member"
+      name: "Ministry Participant",
+      text: "The healing and deliverance ministries have transformed my life. I've experienced God's power in ways I never thought possible.",
+      role: "Testimony of Faith"
     },
     {
-      name: "Maria Rodriguez",
-      text: "The outreach programs allow us to make a real difference in our community. It's truly rewarding.",
-      role: "Volunteer Coordinator"
+      name: "Discipleship Student",
+      text: "The discipleship classes have equipped me with biblical truth and helped me grow in my faith journey. The teaching is powerful and practical.",
+      role: "Growing in Faith"
     }
   ];
 
@@ -132,7 +131,7 @@ function App() {
               <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
                 <Heart className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-gray-900">Muizenberg Church</span>
+              <span className="text-xl font-bold text-gray-900">GLIM International</span>
             </div>
             
             {/* Desktop Navigation */}
@@ -191,10 +190,10 @@ function App() {
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            Welcome to Muizenberg Church
+            Welcome to GLIM International!
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto">
-            A place where faith grows, community thrives, and hearts are transformed by God's love
+            We are delighted to have you here. GLIM International (The Great Light Interdenominational Ministries International) is a vibrant, Christ-centered community committed to spiritual growth, fellowship, and service. Join us as we celebrate God's grace, embrace His calling, and shine His light together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
@@ -222,10 +221,9 @@ function App() {
       <section id="about" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">About Our Church</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">About GLIM International</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              For over 30 years, Muizenberg Church has been a beacon of hope and love in our community, 
-              welcoming all who seek to grow in faith and fellowship.
+              GLIM International is a Christian organization committed to spreading the message of Christ's light and salvation across communities, denominations, and around the world. We emphasize healing, deliverance, and the overall spiritual well-being of our members and the wider community.
             </p>
           </div>
 
@@ -240,27 +238,55 @@ function App() {
             <div className="space-y-6">
               <h3 className="text-3xl font-bold text-gray-900">Our Mission</h3>
               <p className="text-lg text-gray-600">
-                We exist to make disciples of Jesus Christ who love God, love others, and serve the world. 
-                Through worship, community, and service, we strive to be the hands and feet of Christ in our neighborhood and beyond.
+                To bring the great light of Christ—spiritual enlightenment, hope, and the transformative power of God's presence—to those in spiritual darkness, reaching people worldwide.
+              </p>
+              <p className="text-lg font-semibold text-blue-600">
+                GLIM International - Where Christ's Light Shines.
               </p>
               
               <h3 className="text-3xl font-bold text-gray-900">Our Values</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="flex items-center space-x-3">
-                  <Heart className="w-6 h-6 text-blue-600" />
-                  <span className="text-lg text-gray-700">Love & Compassion</span>
+              <div className="space-y-3">
+                <div className="flex items-start space-x-3">
+                  <Star className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="text-lg font-semibold text-gray-900">Faith in Christ</span>
+                    <p className="text-gray-600">We believe in the saving power of Jesus Christ and His light that transforms lives.</p>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <Users className="w-6 h-6 text-blue-600" />
-                  <span className="text-lg text-gray-700">Community</span>
+                <div className="flex items-start space-x-3">
+                  <Users className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="text-lg font-semibold text-gray-900">Interdenominational Unity</span>
+                    <p className="text-gray-600">We embrace all believers, fostering fellowship across denominations.</p>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <Book className="w-6 h-6 text-blue-600" />
-                  <span className="text-lg text-gray-700">Biblical Truth</span>
+                <div className="flex items-start space-x-3">
+                  <Heart className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="text-lg font-semibold text-gray-900">Love and Compassion</span>
+                    <p className="text-gray-600">We extend Christ's love through care, outreach, and service to others.</p>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <Star className="w-6 h-6 text-blue-600" />
-                  <span className="text-lg text-gray-700">Excellence</span>
+                <div className="flex items-start space-x-3">
+                  <Heart className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="text-lg font-semibold text-gray-900">Holistic Spiritual Care</span>
+                    <p className="text-gray-600">We are committed to healing, deliverance, and nurturing the total well-being of individuals.</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Star className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="text-lg font-semibold text-gray-900">Integrity and Excellence</span>
+                    <p className="text-gray-600">We serve with honesty, accountability, and a pursuit of excellence in ministry.</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Book className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="text-lg font-semibold text-gray-900">Empowerment through the Word</span>
+                    <p className="text-gray-600">We equip believers with biblical truth for purposeful and impactful living.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -274,38 +300,42 @@ function App() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Service Times & Location</h2>
             <p className="text-xl text-gray-600">
-              Join us for worship, fellowship, and spiritual growth every week
+              Join us for worship, fellowship, and spiritual growth
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl shadow-lg text-center">
-              <Clock className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Sunday Services</h3>
+              <Music className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">🙌 Sunday Worship</h3>
               <div className="space-y-2">
-                <p className="text-lg text-gray-700">Traditional Service: 8:30 AM</p>
-                <p className="text-lg text-gray-700">Contemporary Service: 10:30 AM</p>
-                <p className="text-lg text-gray-700">Evening Service: 6:00 PM</p>
+                <p className="text-lg font-semibold text-gray-900">Every Sunday</p>
+                <p className="text-lg text-gray-700">13:00 (GMT+2)</p>
+                <p className="text-sm text-gray-600 mt-4">📍 Ubuntu Centre</p>
+                <p className="text-sm text-gray-600">3 Wherry Road, Muizenberg</p>
+                <p className="text-sm text-gray-600">Cape Town</p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl shadow-lg text-center">
+              <Book className="w-12 h-12 text-purple-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">📖 Discipleship Classes</h3>
+              <div className="space-y-2">
+                <p className="text-lg font-semibold text-gray-900">Grow in the Word</p>
+                <p className="text-lg text-gray-700">Every Tuesday</p>
+                <p className="text-lg text-gray-700">20:00 (GMT+2)</p>
+                <p className="text-sm text-gray-600 mt-4">💻 Live on Zoom</p>
               </div>
             </div>
 
             <div className="bg-gradient-to-br from-amber-50 to-amber-100 p-8 rounded-xl shadow-lg text-center">
-              <MapPin className="w-12 h-12 text-amber-600 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Location</h3>
+              <Heart className="w-12 h-12 text-amber-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">🙏 Fasting & Prayer</h3>
               <div className="space-y-2">
-                <p className="text-lg text-gray-700">123 Faith Avenue</p>
-                <p className="text-lg text-gray-700">Springfield, ST 12345</p>
-                <p className="text-sm text-gray-600 mt-4">Free parking available</p>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl shadow-lg text-center">
-              <Phone className="w-12 h-12 text-green-600 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Contact Info</h3>
-              <div className="space-y-2">
-                <p className="text-lg text-gray-700">(555) 123-HOPE</p>
-                <p className="text-lg text-gray-700">info@muizenbergchurch.com</p>
-                <p className="text-sm text-gray-600 mt-4">Office Hours: Mon-Fri 9-5</p>
+                <p className="text-lg font-semibold text-gray-900">7 Days Each Month</p>
+                <p className="text-lg text-gray-700">21:00 (GMT+2)</p>
+                <p className="text-sm text-gray-600 mt-4">💻 Live on Zoom</p>
+                <p className="text-sm text-gray-600 mt-2">Monthly gathering for spiritual renewal</p>
               </div>
             </div>
           </div>
@@ -316,9 +346,9 @@ function App() {
       <section id="ministries" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Our Ministries</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Our Services</h2>
             <p className="text-xl text-gray-600">
-              Discover ways to grow in faith and serve our community
+              At GLIM International, our services are designed to inspire, encourage, and nurture spiritual growth in an interdenominational setting
             </p>
           </div>
 
@@ -336,45 +366,13 @@ function App() {
         </div>
       </section>
 
-      {/* Pastor Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Meet Our Pastor</h2>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8 md:p-12">
-              <div className="flex flex-col md:flex-row items-center gap-8">
-                <img 
-                  src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop"
-                  alt="Pastor Michael Johnson"
-                  className="w-48 h-48 rounded-full object-cover shadow-lg"
-                />
-                <div className="text-center md:text-left">
-                  <h3 className="text-3xl font-bold text-gray-900 mb-2">Pastor Michael Johnson</h3>
-                  <p className="text-xl text-blue-600 mb-4">Lead Pastor</p>
-                  <p className="text-lg text-gray-700 mb-4">
-                    Pastor Michael has been leading our congregation with wisdom, compassion, and dedication for over 15 years. 
-                    His heart for community outreach and biblical teaching has touched countless lives.
-                  </p>
-                  <p className="text-gray-600">
-                    "My greatest joy is seeing people discover God's love and purpose for their lives." - Pastor Michael
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Events Section */}
       <section id="events" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Upcoming Events</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Join Our Regular Services</h2>
             <p className="text-xl text-gray-600">
-              Join us for these special gatherings and community events
+              Connect with us through worship, discipleship, and prayer
             </p>
           </div>
 
@@ -404,9 +402,9 @@ function App() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">What Our Community Says</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Testimonies of Faith</h2>
             <p className="text-xl text-gray-600">
-              Hear from members of our church family
+              Hear from members experiencing Christ's transforming light
             </p>
           </div>
 
@@ -447,24 +445,24 @@ function App() {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-6 h-6 text-blue-400" />
-                  <span>123 Faith Avenue, Springfield, ST 12345</span>
+                  <span>Ubuntu Centre, 3 Wherry Road, Muizenberg, Cape Town</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-6 h-6 text-blue-400" />
-                  <span>(555) 123-HOPE</span>
+                  <span>+27 12 755 440</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-6 h-6 text-blue-400" />
-                  <span>info@muizenbergchurch.com</span>
+                  <span>info.gliminternational@gmail.com</span>
                 </div>
               </div>
 
               <div className="mt-8">
-                <h4 className="text-xl font-semibold mb-4">Office Hours</h4>
+                <h4 className="text-xl font-semibold mb-4">Connect With Us</h4>
                 <div className="space-y-2 text-gray-300">
-                  <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
-                  <p>Saturday: 10:00 AM - 2:00 PM</p>
-                  <p>Sunday: After services</p>
+                  <p>📧 Email us your questions or prayer requests</p>
+                  <p>📞 Call us for more information</p>
+                  <p>🙏 We'd love to hear from you!</p>
                 </div>
               </div>
             </div>
@@ -513,10 +511,10 @@ function App() {
               <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
                 <Heart className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-white">Muizenberg Church</span>
+              <span className="text-xl font-bold text-white">GLIM International</span>
             </div>
             <p className="text-sm">
-              © 2024 Muizenberg Church. All rights reserved. | Built with love and faith.
+              © 2025 GLIM International. All rights reserved. | Where Christ's Light Shines.
             </p>
           </div>
         </div>
