@@ -20,7 +20,10 @@ export const generateDailyInspiration = async (): Promise<InspirationResponse> =
     
     const prompt = `
       Generate a short, uplifting spiritual message for a visitor to "The Great Light Interdenominational Ministries" website.
-      Themes: Light, Salvation, Hope, Transformation.
+      Themes: Light, Salvation, Hope, Transformation, Faith, Grace, Love, Peace, Joy, Redemption, Healing, Strength.
+      
+      IMPORTANT: Be creative and varied. Pick a different verse each time from anywhere in the Bible.
+      Use a random seed based on this timestamp: ${Date.now()}
       
       Return the response in strictly valid JSON format with this schema:
       {
