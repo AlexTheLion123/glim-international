@@ -26,7 +26,7 @@ const DailyInspiration: React.FC = () => {
         <div className="mb-10">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-glim-gold/10 text-glim-gold text-sm font-bold tracking-wider mb-4 border border-glim-gold/20">
                 <Sparkles className="w-4 h-4" />
-                AI SPIRITUAL COMPANION
+                SPIRITUAL COMPANION
             </span>
             <h2 className="text-3xl md:text-5xl font-serif font-bold text-white">Receive a Word of Light</h2>
             <p className="mt-4 text-gray-400">

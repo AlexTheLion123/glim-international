@@ -27,7 +27,7 @@ const Donation: React.FC = () => {
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6">Giving & Support</h2>
           <p className="max-w-2xl mx-auto text-gray-400 text-lg leading-relaxed">
             Your generous contributions enable us to reach more lives through sound bible teaching, 
-            holistic spiritual care, and community outreach. Thank you for partnering with the vision of GLIM.
+            holistic spiritual care, and community outreach. Thank you for partnering with the vision of GLIM International.
           </p>
         </div>
 
@@ -50,7 +50,7 @@ const Donation: React.FC = () => {
                     <div>
                       <p className="text-glim-gold text-xs font-bold uppercase tracking-widest mb-1">Bank Name</p>
                       <div className="flex items-center gap-2">
-                        <CreditCard className="w-5 h-5 text-glim-purple" />
+                        {/* <CreditCard className="w-5 h-5 text-glim-purple" /> */}
                         <p className="text-lg text-white font-semibold">{DONATION_INFO.bank}</p>
                       </div>
                     </div>

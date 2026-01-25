@@ -26,12 +26,13 @@ const Navbar: React.FC = () => {
             <div className="w-10 h-10 rounded-full bg-gradient-to-br from-glim-gold to-glim-purple flex items-center justify-center shadow-lg shadow-glim-gold/20">
                <Globe className="text-white w-6 h-6" />
             </div>
-            <span className="font-serif font-bold text-xl md:text-2xl text-white tracking-wide">
-              {CHURCH_ACRONYM}
+            <span className="font-serif font-bold text-xl xl:text-2xl text-white tracking-wide">
+              <span className="xl:hidden">{CHURCH_ACRONYM} International</span>
+              <span className="hidden xl:inline">{CHURCH_ACRONYM}</span>
             </span>
           </div>
           
-          <div className="hidden md:block">
+          <div className="hidden xl:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {NAV_ITEMS.map((item) => (
                 <a
@@ -51,7 +52,7 @@ const Navbar: React.FC = () => {
             </div>
           </div>
 
-          <div className="md:hidden">
+          <div className="xl:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-gray-300 hover:text-white focus:outline-none p-2"
@@ -64,7 +65,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-glim-dark/95 backdrop-blur-xl border-t border-white/10">
+        <div className="xl:hidden bg-glim-dark/95 backdrop-blur-xl border-t border-white/10">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {NAV_ITEMS.map((item) => (
               <a
