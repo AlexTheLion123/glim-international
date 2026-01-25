@@ -30,7 +30,7 @@ const DailyInspiration: React.FC = () => {
             </span>
             <h2 className="text-3xl md:text-5xl font-serif font-bold text-white">Receive a Word of Light</h2>
             <p className="mt-4 text-gray-400">
-                Need a quick spiritual lift? Let our ministry AI generate a personalized scripture and encouraging thought for you today.
+                Need a quick spiritual lift? Let our ministry generate a personalized scripture and encouraging thought for you today.
             </p>
         </div>
 
