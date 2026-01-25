@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
               <Calendar className="w-5 h-5" />
               Join Sunday Worship
             </a>
-            <a href="#location" className="w-full md:w-auto px-8 py-4 bg-transparent border-2 border-white/20 rounded-full text-white font-bold text-lg hover:bg-white/10 transition-all backdrop-blur-sm flex items-center justify-center gap-2">
+            <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(CONTACT_INFO.address)}`} target="_blank" rel="noreferrer" className="w-full md:w-auto px-8 py-4 bg-transparent border-2 border-white/20 rounded-full text-white font-bold text-lg hover:bg-white/10 transition-all backdrop-blur-sm flex items-center justify-center gap-2">
               <MapPin className="w-5 h-5" />
               Find Us
             </a>

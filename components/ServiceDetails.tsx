@@ -89,9 +89,14 @@ const ServiceDetails: React.FC = () => {
                 </div>
               </div>
 
-              <button className="mt-8 w-full py-3 bg-gradient-to-r from-glim-purple to-glim-violet rounded-xl text-white font-bold shadow-lg hover:shadow-glim-purple/50 transition-all">
+              <a 
+                href={`https://zoom.us/j/${CONTACT_INFO.zoomId.replace(/\s/g, '')}?pwd=${CONTACT_INFO.zoomPasscode}`}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-8 w-full py-3 bg-gradient-to-r from-glim-purple to-glim-violet rounded-xl text-white font-bold shadow-lg hover:shadow-glim-purple/50 transition-all block text-center"
+              >
                 Launch Zoom Meeting
-              </button>
+              </a>
             </div>
           </div>
         </div>
