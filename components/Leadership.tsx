@@ -42,7 +42,7 @@ const Leadership: React.FC = () => {
               </div>
               <div className="p-4 rounded-xl bg-white/5 border border-white/10">
                  <h4 className="text-glim-blue font-bold mb-2">Worship</h4>
-                 <p className="text-gray-400 text-sm">Interdenominational national worship.</p>
+                 <p className="text-gray-400 text-sm">Interdenominational worship.</p>
               </div>
               <div className="p-4 rounded-xl bg-white/5 border border-white/10">
                  <h4 className="text-glim-violet font-bold mb-2">Outreach</h4>

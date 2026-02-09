@@ -5,7 +5,6 @@ export const CHURCH_NAME = "The Great Light Interdenominational Ministries Inter
 export const CHURCH_ACRONYM = "GLIM";
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "Leadership", href: "#leadership" },
@@ -23,7 +22,7 @@ export const CONTACT_INFO = {
 };
 
 export const DONATION_INFO = {
-  accountHolder: "GLIM International (The Great Light Interdenominational Ministries International)",
+  accountHolder: "GLIM International",
   bank: "First National Bank (FNB)",
   accountNumber: "63136192498",
   branchCode: "250655",

@@ -42,7 +42,7 @@ const ContactFooter: React.FC = () => {
           <div>
             <h3 className="text-2xl font-serif font-bold text-white mb-6">{CHURCH_NAME}</h3>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Providing holistic spiritual care through sound bible teaching, national worship, and community outreach.
+              Providing holistic spiritual care through sound bible teaching, interdenominational worship, and community outreach.
             </p>
             <div className="flex space-x-4">
               <a

@@ -2,6 +2,8 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import About from './components/About';
+import Values from './components/Values';
 import ServiceDetails from './components/ServiceDetails';
 import Leadership from './components/Leadership';
 import DailyInspiration from './components/DailyInspiration';
@@ -14,6 +16,8 @@ const App: React.FC = () => {
       <Navbar />
       <main>
         <Hero />
+        <About />
+        <Values />
         <ServiceDetails />
         <Leadership />
         <DailyInspiration />
