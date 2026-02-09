@@ -7,10 +7,6 @@ const Leadership: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center gap-12">
           
           <div className="w-full md:w-1/2 relative">
-             {/* Decorative Frame */}
-            <div className="absolute inset-0 border-2 border-glim-gold rounded-full transform rotate-3 scale-105 opacity-30"></div>
-            <div className="absolute inset-0 border-2 border-glim-purple rounded-full transform -rotate-3 scale-105 opacity-30"></div>
-            
             {/* Placeholder for the image in the flyer - using a high quality stock generic for now as per instructions to not use external raw images unless unsplash */}
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-glim-purple/20 aspect-[4/5] bg-gray-800">
                <img 
