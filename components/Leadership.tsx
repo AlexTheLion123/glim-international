@@ -28,7 +28,7 @@ const Leadership: React.FC = () => {
               <span className="text-glim-orchid">Love & Truth</span>
             </h2>
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
-              "We believe in the holistic spiritual care of every individual. Our mission is to guide you into a transformative experience with Christ's light, empowering you through sound biblical teaching and community outreach."
+              We believe in the holistic spiritual care of every individual. Our mission is to guide you into a transformative experience with Christ's light, empowering you through sound biblical teaching and community outreach.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
