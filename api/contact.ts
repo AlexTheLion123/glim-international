@@ -1,5 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { sendPrayerRequestEmail } from '../services/contactEmail';
+import { Resend } from 'resend';
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') {
@@ -13,7 +15,17 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
-    const { data, error } = await sendPrayerRequestEmail(email, message);
+    const { data, error } = await resend.emails.send({
+      from: 'GLIM Prayer Requests <onboarding@resend.dev>',
+      to: ['info.gliminternational@gmail.com'],
+      subject: `Prayer Request from ${email}`,
+      html: `
+        <h2>Prayer Request</h2>
+        <p><strong>Email:</strong> ${email}</p>
+        <hr />
+        <p>${message.replace(/\n/g, '<br />')}</p>
+      `,
+    });
 
     if (error) {
       console.error('Resend error:', error);
